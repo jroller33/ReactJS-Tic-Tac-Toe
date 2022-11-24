@@ -2,7 +2,7 @@
 
 ## 🚧 under development 🚧
 
-This is a simple frontend tic-tac-toe game, built using ReactJS. I mainly built this to play around with react.
+This is a simple frontend tic-tac-toe game, built using ReactJS. I mainly built this to play around with react and learn how it works.
 
 <!-- # Getting Started with Create React App
 
