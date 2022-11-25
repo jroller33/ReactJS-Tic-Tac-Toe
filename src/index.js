@@ -8,7 +8,7 @@ import './index.css';
 
 // Square: renders a single <button>
 
-class Square extends React.Component {
+class Square extends React.Component {        //    SQUARE
 
   constructor(props) {
     super(props);
@@ -29,8 +29,20 @@ class Square extends React.Component {
   }
 }
 
+
+
+
+
 // renders 9 squares
-class Board extends React.Component {
+class Board extends React.Component {             //    BOARD
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      squares: Array(9).fill(null),
+    };
+  }
+
   renderSquare(i) {
     return <Square value={i} />;
   }
@@ -62,8 +74,12 @@ class Board extends React.Component {
 }
 
 
+
+
+
+
 // renders a board
-class Game extends React.Component {
+class Game extends React.Component {         //   GAME
   render() {
     return (
       <div className="game">
