@@ -1,8 +1,32 @@
 # ReactJS Tic-Tac-Toe
 
-## 🚧 under development 🚧
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+## Description
 
 This is a simple frontend tic-tac-toe game, built using ReactJS. I mainly built this to play around with react and learn how it works.
+
+## Table of Contents
+- [Link](#link)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
+
+## Link
+
+
+## Usage
+
+
+## License
+This project is licensed under the [MIT License](./LICENSE).
+
+## Contact
+[GitHub](https://github.com/jroller33)
+
+
+
+
+
 
 <!-- # Getting Started with Create React App
 
