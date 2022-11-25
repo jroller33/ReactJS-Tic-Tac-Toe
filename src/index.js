@@ -1,16 +1,27 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+
+
+// there's 3 react components: Square, Board and Game
+
+
+// Square: renders a single <button>
+
 class Square extends React.Component {
     render() {
       return (
         <button className="square">
-          {/* TODO */}
+          {this.props.value}
         </button>
       );
     }
   }
   
+  // renders 9 squares
   class Board extends React.Component {
     renderSquare(i) {
-      return <Square />;
+      return <Square value={i} />;
     }
   
     render() {
@@ -38,7 +49,9 @@ class Square extends React.Component {
       );
     }
   }
-  
+
+
+  // renders a board
   class Game extends React.Component {
     render() {
       return (
