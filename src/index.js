@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-
 // there's 3 react components: Square, Board and Game
-
 
 // Square: renders a single <button>
 // instead of Square being a class, it's now going to be a function component
@@ -19,14 +17,8 @@ function Square(props) {
   );
 }
 
-
-
-
-
 // renders 9 squares
 class Board extends React.Component {             //    BOARD
-
-
   renderSquare(i) {
     return (
       <Square 
@@ -37,7 +29,6 @@ class Board extends React.Component {             //    BOARD
   }
 
   render() {
-
     return (
       <div>
         <div className="board-row">
@@ -60,20 +51,16 @@ class Board extends React.Component {             //    BOARD
   }
 }
 
-
-
-
-
-
 // renders a board
 class Game extends React.Component {         //   GAME
-
   constructor(props) {
     super(props);
     this.state = {
+
       history: [{
         squares: Array(9).fill(null),
       }],
+
       stepNumber: 0,
       xIsNext: true,
     };
@@ -83,14 +70,18 @@ class Game extends React.Component {         //   GAME
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
     const squares = current.squares.slice();
+
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
+
     squares[i] = this.state.xIsNext ? 'X' : 'O';
+
     this.setState({
       history: history.concat([{
         squares: squares,
       }]),
+
       stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
     });
@@ -113,7 +104,9 @@ class Game extends React.Component {         //   GAME
       const desc = move ?
         'Go to move #' + move :
         'Go to game start';
+      // const gameHistory = 'Game History":'
       return (
+        // <li key={gameHistory}>{gameHistory}</li>
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
@@ -137,6 +130,8 @@ class Game extends React.Component {         //   GAME
             onClick={ (i) => this.handleClick(i) }
           />
         </div>
+        <div className="game-blank-space">
+        </div>
         <div className="game-info">
           <div>{ status }</div>
           <ol>{ moves }</ol>
@@ -146,7 +141,6 @@ class Game extends React.Component {         //   GAME
   }
 }
 
-// ========================================
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Game />);
