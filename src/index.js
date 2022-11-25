@@ -7,19 +7,16 @@ import './index.css';
 
 
 // Square: renders a single <button>
+// instead of Square being a class, it's now going to be a function component
+// bc it will only contain a render method and doesn't have its own state
 
-class Square extends React.Component {        //    SQUARE
-
-  render() {
+function Square(props) {
+  // this.props.value becomes props.value bc it's no longer in a class
     return (
-      <button 
-      className="square" 
-      onClick={() => this.props.onClick()}
-      >
-        {this.props.value}
-      </button>
-    );
-  }
+    <button className='square' onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
 
