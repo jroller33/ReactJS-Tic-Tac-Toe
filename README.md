@@ -12,7 +12,7 @@ This is a simple frontend tic-tac-toe game, built using ReactJS. I mainly built 
 - [Contact](#contact)
 
 ## Link
-https://jroller33.github.io/ReactJS-Tic-Tac-Toe"
+https://jroller33.github.io/ReactJS-Tic-Tac-Toe
 
 
 ## Usage
