@@ -107,7 +107,7 @@ class Game extends React.Component {         //   GAME
       // const gameHistory = 'Game History":'
       return (                                // game history buttons
         // <li key={gameHistory}>{gameHistory}</li>
-        <li key={move}>
+        <li className='liDiv' key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       );
@@ -137,8 +137,8 @@ class Game extends React.Component {         //   GAME
         <div className="game-blank-space">
         </div>
         <div className="game-info">
-          <div>{ status }</div>
-          <ol>{ moves }</ol>
+          <div className='nextPlayer'>{ status }</div>
+            <ul className='gameHistory'>{ moves }</ul>
         </div>
       </div>
     </div>
