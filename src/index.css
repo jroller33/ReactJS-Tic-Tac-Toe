@@ -1,6 +1,6 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 50px;
+    font: 14px "Century Gothic", Futura, sans-serif;      /* CHANGE FONT */
+    /* margin: 50px; */
   }
   
   ol, ul {
@@ -43,8 +43,18 @@ body {
   
   .container {
     display: flex;
+    flex-direction: column;
   }
 
+  .headerDiv {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .header {
+    color: #1571cd;
+  }
+  
   .game {
     display: flex;
     flex-direction: column;
