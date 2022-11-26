@@ -4,22 +4,19 @@ body {
   }
   
   ol, ul {
-    padding-left: 30px;
+    display: flex;
   }
   
-  .game-board {
-    margin: auto;
-  }
-
+  
   .board-row:after {
     clear: both;
     content: "";
     display: table;
   }
   
-  .status {
+  /* .status {
     margin-bottom: 10px;
-  }
+  } */
   
   .square {
     background: #fff;
@@ -44,16 +41,25 @@ body {
     background: #ddd;
   }
   
+  .container {
+    display: flex;
+  }
+
   .game {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
   
+  .game-board {
+    margin-bottom: 20%;
+  }
+
   .game-blank-space {
-    height: 150px;
+    margin: 30%;
   }
   .game-info {
     /* margin-top: 200px; */
-    margin: auto;
+    /* margin: auto; */
   }
   

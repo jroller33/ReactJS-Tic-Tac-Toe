@@ -105,7 +105,7 @@ class Game extends React.Component {         //   GAME
         'Go to move #' + move :
         'Go to game start';
       // const gameHistory = 'Game History":'
-      return (
+      return (                                // game history buttons
         // <li key={gameHistory}>{gameHistory}</li>
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
@@ -122,7 +122,8 @@ class Game extends React.Component {         //   GAME
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
-    return (
+    return (                                                     // main HTML
+    <div className='container'>
       <div className="game">
         <div className="game-board">
         <Board
@@ -137,6 +138,7 @@ class Game extends React.Component {         //   GAME
           <ol>{ moves }</ol>
         </div>
       </div>
+    </div>
     );
   }
 }
@@ -146,7 +148,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Game />);
 
 function calculateWinner(squares) {
-  const lines = [
+  const lines = [           // every possible winning combination
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -156,6 +158,7 @@ function calculateWinner(squares) {
     [0, 4, 8],
     [2, 4, 6],
   ];
+
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
