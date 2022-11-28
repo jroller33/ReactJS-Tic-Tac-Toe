@@ -55,6 +55,7 @@ body {
 
   .headerWrapper {
     display: flex;
+    max-width: 350px;
 
   }
   .App-logo {
