@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import logo from './logo.svg';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // there's 3 react components: Square, Board and Game
 
@@ -125,7 +128,11 @@ class Game extends React.Component {         //   GAME
     return (                                               // *** main HTML
     <div className='container'>
     <div className='headerDiv'>
-      <h1 className='header'>Tic-Tac-Toe</h1>
+      <div className='headerWrapper'>
+        <div><img src={logo} className="App-logo" alt="logo" /></div>
+
+        <h1 className='header'>Tic-Tac-Toe</h1>
+      </div>
     </div>
       <div className="game">
         <div className="game-board">

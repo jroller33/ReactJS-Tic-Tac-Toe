@@ -49,11 +49,39 @@ body {
 
   .headerDiv {
     display: flex;
-    justify-content: center;
     margin: 10px;
+    justify-content: center;
   }
+
+  .headerWrapper {
+    display: flex;
+
+  }
+  .App-logo {
+    flex: 1;  
+    height: 8vmin;
+    pointer-events: none;
+    align-self: baseline;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .header {
     color: #1571cd;
+    flex: 2;
     font-size: 5vw;
   }
   
