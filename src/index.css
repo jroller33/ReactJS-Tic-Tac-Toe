@@ -55,22 +55,21 @@ body {
 
   .headerWrapper {
     display: flex;
-    max-width: 350px;
+    /* max-width: 350px; */
 
   }
-  .App-logo {
+  
+  /* .App-logo {
     flex: 1;  
     height: 8vmin;
     pointer-events: none;
     align-self: baseline;
   }
-  
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 10s linear;
     }
   }
-
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
@@ -78,11 +77,11 @@ body {
     to {
       transform: rotate(360deg);
     }
-  }
+  } */
 
   .header {
     color: #1571cd;
-    flex: 2;
+    /* flex: 2; */
     font-size: 5vw;
   }
   

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -129,7 +129,7 @@ class Game extends React.Component {         //   GAME
     <div className='container'>
     <div className='headerDiv'>
       <div className='headerWrapper'>
-        <div><img src={logo} className="App-logo" alt="logo" /></div>
+        {/* <div><img src={logo} className="App-logo" alt="logo" /></div> */}
 
         <h1 className='header'>Tic-Tac-Toe</h1>
       </div>
